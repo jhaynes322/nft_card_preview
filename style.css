@@ -3,4 +3,91 @@
     margin: 0;
     padding: 0;
     max-width: 1440px;
+
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card_info {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    border-radius: 10px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.price {
+    padding-bottom: 25px;
+}
+
+#eth_cost {
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 80px;
+}
+
+#time_left {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    margin-right: 25px;
+}
+
+.ethereum_icon {
+    height: 18px;
+    width: 12px;
+}
+
+.clock_icon {
+    width: 18px;
+    height: 18px;
+}
+
+.line {
+    width: 300px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-left: 25px;
+}
+
+.creator_img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
 }
