@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(217, 54%, 11%);
+    padding-bottom: 15px;
 }
 
 .card_info {
@@ -86,8 +87,27 @@ p {
     margin-left: 25px;
 }
 
-.creator_img {
+.wtf_is_this {
     width: 33px;
     height: 33px;
     border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator {
+    margin-bottom: 30px;
+}
+
+#creator_info {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#name {
+    color: white;
 }
