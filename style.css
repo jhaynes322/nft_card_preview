@@ -107,3 +107,7 @@ svg {
     text-decoration: none;
     color: white;
 }
+
+.links:hover {
+    color: hsl(178, 100%, 50%);
+}
