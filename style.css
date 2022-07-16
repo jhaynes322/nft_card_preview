@@ -1,127 +1,109 @@
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-width: 1440px;
-
 }
 
 body {
-    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
 }
 
 .container {
+    background-color: var(--main-bg);
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(217, 54%, 11%);
-    padding-bottom: 15px;
 }
 
-.card_info {
-    background-color: hsl(216, 50%, 16%);
+.card {
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
     width: 350px;
-    height: 600px;
-    border-radius: 10px;
+    height: auto;
 }
 
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin-top: 25px;
-    margin-left: 25px;
-
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25em;
 }
 
-.h1 {
-    color: hsl(0, 0%, 100%);
-    font-family: 'Outfit', sans-serif;
-    margin-top: 25px;
-    margin-left: 25px;
-    font-weight: 400;
-    font-size: 23px;
-    text-decoration: none;
-}
-
-p {
+.description {
     color: hsl(215, 51%, 70%);
-    font-family: 'Outfit', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 .price {
-    padding-bottom: 25px;
-}
-
-#eth_cost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: hsl(178, 100%, 50%);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    margin-right: 80px;
 }
 
-#time_left {
+.days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: hsl(215, 51%, 70%);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    margin-right: 25px;
 }
 
-.price .ethereum_icon {
-    height: 18px;
-    width: 12px;
+.first_img {
+    border-radius: 10px;
 }
 
-.price .clock_icon {
-    width: 18px;
-    height: 18px;
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+.price-and-days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+svg {
+    height: 20px;
+    width: 25px;
 }
 
 .line {
-    width: 300px;
-    border-top: 1px solid hsl(215, 32%, 27%);
-    margin-left: 25px;
+    border-top: 1px solid var(--line);
 }
 
-.creator .wtf_is_this {
+.creator-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.creator_name {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator-pic {
     width: 33px;
     height: 33px;
-    border: 1px solid white;
     border-radius: 50%;
-    margin-top: 15px;
+    border: 1px solid white;
+    margin-right: 15px;
 }
 
-.creator {
-    margin-bottom: 30px;
-}
-
-#creator_info {
-    color: hsl(215, 51%, 70%);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    margin-left: 15px;
-    padding-bottom: 40px;
-}
-
-.name {
-    color: white;
-    padding-bottom: 40px;
+.links {
     text-decoration: none;
-}
-
-.links:hover {
-    color: hsl(178, 100%, 50%);
-}
-
-.first_img:hover {
-    background-color: hsl(178, 100%, 50%);
-    opacity: 60%
+    color: white;
 }
